@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blauLabs Insurance Solutions - AI & IoT Accelerators</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'blau-primary': '#1E40AF',
+                        'blau-secondary': '#3B82F6',
+                        'insurance-blue': '#0F172A',
+                        'accent-teal': '#0D9488',
+                        'accent-purple': '#5B21B6',
+                        'success-green': '#059669'
+                    },
+                    fontFamily: {
+                        'sans': ['Arial', 'Helvetica', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            body { margin: 0; }
+            .no-print { display: none !important; }
+        }
+        .insurance-gradient {
+            background: linear-gradient(135deg, #1E40AF 0%, #60A5FA 50%, #1E40AF 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .tech-table {
+            border-collapse: collapse;
+        }
+        .tech-table th, .tech-table td {
+            border: 1px solid #e5e7eb;
+            padding: 12px;
+            text-align: left;
+        }
+        .tech-table th {
+            background-color: #f3f4f6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Document Container -->
+    <div class="max-w-6xl mx-auto p-6">
+        <div id="document" class="bg-white shadow-xl">
+            <!-- Header -->
+            <div class="insurance-gradient text-white p-8 relative">
+                <!-- Header Logos -->
+                <div class="absolute top-16 left-8 right-8 flex justify-between items-center">
+                    <img src="https://pfst.cf2.poecdn.net/base/image/4781a172daf4f34d39e5bc60dba32a78be4800d2c4f6f0db62d65e985aeb12f0?w=1344&h=390" 
+                         alt="blauLabs Logo" 
+                         class="h-10">
+                    <img src="https://pfst.cf2.poecdn.net/base/image/65dde2f40a020d6a8c1096bde5b788aaba200ce5f24392c6f850dff4cae178b7?w=156&h=80" 
+                         alt="Softtek Logo" 
+                         class="h-12">
+                </div>
+                
+                <div class="text-center pt-8">
+                    <h1 class="text-3xl font-bold mb-4">AI & IoT Accelerators for Auto & Home Insurance</h1>
+                    <p class="text-lg opacity-95 max-w-3xl mx-auto">Data-driven innovation for faster claims, smarter risk, and seamless customer experiences.</p>
+                </div>
+            </div>
+
+            <!-- What is blauLabs Section -->
+            <div class="p-8 bg-gradient-to-br from-blue-50 to-teal-50 border-b">
+                <h2 class="text-3xl font-bold text-insurance-blue mb-8 text-center">What is blauLabs?</h2>
+                
+                <div class="max-w-5xl mx-auto">
+                    <div class="bg-white p-8 rounded-2xl card-shadow border-l-4 border-blau-primary">
+                        <div class="grid md:grid-cols-3 gap-8 items-center">
+                            <!-- Main Description -->
+                            <div class="md:col-span-2">
+                                <div class="flex items-start mb-4">
+                                    <div class="w-12 h-12 bg-blau-primary text-white rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <span class="text-xl">🚀</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-insurance-blue mb-3">Enterprise IoT Platform Built for Insurance Innovation</h3>
+                                        <p class="text-gray-700 leading-relaxed">
+                                            blauLabs transforms how insurers manage risk, process claims, and engage customers by seamlessly connecting IoT sensors, mobile devices, and legacy systems into one intelligent platform.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="grid md:grid-cols-2 gap-4 mt-6">
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-accent-teal rounded-full mr-3"></div>
+                                        <span class="text-sm text-gray-600"><strong>Real-time risk monitoring</strong> for auto & home</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-accent-teal rounded-full mr-3"></div>
+                                        <span class="text-sm text-gray-600"><strong>AI-powered claims automation</strong></span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-accent-teal rounded-full mr-3"></div>
+                                        <span class="text-sm text-gray-600"><strong>Fraud detection</strong> & prevention</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-accent-teal rounded-full mr-3"></div>
+                                        <span class="text-sm text-gray-600"><strong>Seamless legacy integration</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Value Proposition -->
+                            <div class="bg-gradient-to-br from-blau-primary to-accent-teal text-white p-6 rounded-xl">
+                                <h4 class="font-bold text-lg mb-4 text-center">Potential Insurance Impact</h4>
+                                <div class="space-y-3">
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold">30-50%</div>
+                                        <div class="text-xs opacity-90">Claims Cost Reduction*</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold">40%</div>
+                                        <div class="text-xs opacity-90">Fewer Property Claims*</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold">20-30%</div>
+                                        <div class="text-xs opacity-90">Higher Customer Satisfaction*</div>
+                                    </div>
+                                </div>
+                                <div class="text-xs text-center opacity-75 mt-4">
+                                    *Industry research findings
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why blauLabs Section -->
+            <div class="p-8 bg-gray-50">
+                <h2 class="text-2xl font-bold text-insurance-blue mb-6 text-center">Why blauLabs? Industry-Backed Results</h2>
+                <p class="text-lg text-gray-700 mb-6 text-center max-w-4xl mx-auto">
+                    Softtek's blauLabs leverages proven technologies validated by leading analysts to deliver:
+                </p>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-4">
+                            <div class="w-8 h-8 bg-blau-primary text-white rounded-full flex items-center justify-center mr-3">
+                                <span class="text-sm font-bold">✓</span>
+                            </div>
+                            <h3 class="font-bold text-insurance-blue">Computer Vision</h3>
+                        </div>
+                        <p class="text-gray-600">Cut claims costs with AI-powered damage assessment <span class="text-sm text-gray-500">(source: McKinsey)</span></p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-4">
+                            <div class="w-8 h-8 bg-accent-teal text-white rounded-full flex items-center justify-center mr-3">
+                                <span class="text-sm font-bold">✓</span>
+                            </div>
+                            <h3 class="font-bold text-insurance-blue">IoT & Telematics</h3>
+                        </div>
+                        <p class="text-gray-600">Reduce losses via real-time risk monitoring <span class="text-sm text-gray-500">(source: Gartner)</span></p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-4">
+                            <div class="w-8 h-8 bg-accent-purple text-white rounded-full flex items-center justify-center mr-3">
+                                <span class="text-sm font-bold">✓</span>
+                            </div>
+                            <h3 class="font-bold text-insurance-blue">Mobile Apps</h3>
+                        </div>
+                        <p class="text-gray-600">Boost engagement with self-service tools <span class="text-sm text-gray-500">(source: McKinsey)</span></p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-4">
+                            <div class="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center mr-3">
+                                <span class="text-sm font-bold">✓</span>
+                            </div>
+                            <h3 class="font-bold text-insurance-blue">Unified Positioning System</h3>
+                        </div>
+                        <p class="text-gray-600">Enhanced asset tracking and location intelligence for precise risk assessment <span class="text-sm text-gray-500">(Softtek Customer - US)</span></p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-4">
+                            <div class="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center mr-3">
+                                <span class="text-sm font-bold">✓</span>
+                            </div>
+                            <h3 class="font-bold text-insurance-blue">BMS Monitoring</h3>
+                        </div>
+                        <p class="text-gray-600">Building management systems integration for property insurance risk mitigation <span class="text-sm text-gray-500">(Softtek Customer - EMEA)</span></p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-4">
+                            <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center mr-3">
+                                <span class="text-sm font-bold">✓</span>
+                            </div>
+                            <h3 class="font-bold text-insurance-blue">IoT Monitoring</h3>
+                        </div>
+                        <p class="text-gray-600">Real-time infrastructure monitoring for operational risk management and compliance <span class="text-sm text-gray-500">(Softtek Customer - Telco North America)</span></p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Key Use Cases -->
+            <div class="p-8">
+                <h2 class="text-2xl font-bold text-insurance-blue mb-8 text-center">Key Use Cases & Industry Proof Points</h2>
+                
+                <!-- Use Case 1 -->
+                <div class="mb-8 bg-gradient-to-r from-blau-primary to-blau-secondary text-white p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">1. AI-Powered Claims Automation (Computer Vision)</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Home/Facilities -->
+                        <div class="bg-white/10 p-4 rounded">
+                            <h4 class="font-semibold mb-3 text-center flex items-center justify-center">
+                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center mr-2">
+                                    <span class="text-lg">🏠</span>
+                                </div>
+                                Home & Facilities
+                            </h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center"><span class="mr-2">•</span> Property damage assessment via mobile uploads</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Water damage and structural analysis</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Automated property claim triaging and severity assessment</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Document processing for property records and permits</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Fraud detection using image forensics</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Automotive -->
+                        <div class="bg-white/10 p-4 rounded">
+                            <h4 class="font-semibold mb-3 text-center flex items-center justify-center">
+                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center mr-2">
+                                    <span class="text-lg">🚗</span>
+                                </div>
+                                Automotive
+                            </h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center"><span class="mr-2">•</span> Vehicle damage analysis via mobile uploads</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Accident scene documentation and analysis</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Automated collision claim triaging</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> VIN scanning and vehicle identification</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Parts identification and cost estimation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Industry Quote -->
+                    <div class="mt-6 bg-white/10 p-4 rounded text-center">
+                        <p class="text-sm italic">"AI can reduce claims processing costs by 30–50% and cut fraud losses by 10–15%."</p>
+                        <p class="text-xs mt-2 opacity-90">—McKinsey, "AI in Insurance" (2023)</p>
+                    </div>
+                </div>
+
+                <!-- Use Case 2 -->
+                <div class="mb-8 bg-gradient-to-r from-accent-teal to-green-600 text-white p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">2. IoT for Risk Prevention (Telematics & Smart Homes)</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Home/Facilities -->
+                        <div class="bg-white/10 p-4 rounded">
+                            <h4 class="font-semibold mb-3 text-center flex items-center justify-center">
+                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center mr-2">
+                                    <span class="text-lg">🏠</span>
+                                </div>
+                                Home & Facilities
+                            </h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center"><span class="mr-2">•</span> Leak/fire detection with smart sensors</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Building management system (BMS) integration for property monitoring</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Environmental monitoring (temperature, humidity, security)</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Predictive maintenance alerts for infrastructure assets</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Unified positioning system for asset location tracking</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Automotive -->
+                        <div class="bg-white/10 p-4 rounded">
+                            <h4 class="font-semibold mb-3 text-center flex items-center justify-center">
+                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center mr-2">
+                                    <span class="text-lg">🚗</span>
+                                </div>
+                                Automotive
+                            </h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center"><span class="mr-2">•</span> PHYD (Pay-How-You-Drive) pricing via OBD/mobile data</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Real-time driving behavior monitoring and scoring</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Vehicle location tracking and theft prevention</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Accident detection and emergency response</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Usage-based insurance (UBI) analytics and reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Industry Quote -->
+                    <div class="mt-6 bg-white/10 p-4 rounded text-center">
+                        <p class="text-sm italic">"IoT-enabled insurers see 40% fewer claims in property and 15–20% lower premiums for safe drivers."</p>
+                        <p class="text-xs mt-2 opacity-90">—Gartner, "IoT in Insurance" (2024)</p>
+                    </div>
+                </div>
+
+                <!-- Use Case 3 -->
+                <div class="mb-8 bg-gradient-to-r from-accent-purple to-purple-700 text-white p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">3. Mobile-First Customer Experiences</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Home/Facilities -->
+                        <div class="bg-white/10 p-4 rounded">
+                            <h4 class="font-semibold mb-3 text-center flex items-center justify-center">
+                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center mr-2">
+                                    <span class="text-lg">🏠</span>
+                                </div>
+                                Home & Facilities
+                            </h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center"><span class="mr-2">•</span> Property insurance mobile apps and policy management</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Home monitoring alerts and notifications</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Digital first notice of loss (FNOL) for property claims</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Interactive dashboards for homeowners</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Smart home integration and control</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Automotive -->
+                        <div class="bg-white/10 p-4 rounded">
+                            <h4 class="font-semibold mb-3 text-center flex items-center justify-center">
+                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center mr-2">
+                                    <span class="text-lg">🚗</span>
+                                </div>
+                                Automotive
+                            </h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center"><span class="mr-2">•</span> Auto insurance mobile apps and policy management</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Real-time driving alerts and notifications</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Digital first notice of loss (FNOL) for auto claims</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Interactive dashboards for drivers</li>
+                                <li class="flex items-center"><span class="mr-2">•</span> Emergency assistance and roadside support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Industry Quote -->
+                    <div class="mt-6 bg-white/10 p-4 rounded text-center">
+                        <p class="text-sm italic">"Insurers with mobile self-service tools achieve 20–30% higher customer satisfaction."</p>
+                        <p class="text-xs mt-2 opacity-90">—McKinsey, "Digital Insurance Trends" (2023)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cross-Industry Success -->
+            <div class="p-8 bg-gray-50">
+                <h2 class="text-2xl font-bold text-insurance-blue mb-6">Cross-Industry Success: Biotech Case Study</h2>
+                <div class="bg-white p-6 rounded-lg card-shadow">
+                    <p class="text-gray-700 mb-6">
+                        A leading biotechnology company used blauLabs to meet strict regulatory compliance and improve asset visibility across labs and logistics:
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-success-green rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                    <div>
+                                        <p class="font-semibold text-insurance-blue">Indoor/Outdoor Tracking</p>
+                                        <p class="text-sm text-gray-600">Unified platform with IPS, GPS, and LIMS integration</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-success-green rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                    <div>
+                                        <p class="font-semibold text-insurance-blue">Real-Time Alerts</p>
+                                        <p class="text-sm text-gray-600">Automated alarms for route deviations and lab compliance</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-success-green rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                    <div>
+                                        <p class="font-semibold text-insurance-blue">AR & 3D Mapping</p>
+                                        <p class="text-sm text-gray-600">Enhanced user experience in regulated environments</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-success-green rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                    <div>
+                                        <p class="font-semibold text-insurance-blue">Proven at Scale</p>
+                                        <p class="text-sm text-gray-600">Over 30 years of experience, FDA-approved drugs, and 10+ years in regulated environments</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                        <p class="text-sm text-gray-700">
+                            This success story demonstrates how blauLabs' IoT stack supports compliance-heavy industries—a key advantage for insurers managing claims integrity, asset tracking, and regulatory audits.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Stack Comparison -->
+            <div class="p-8">
+                <h2 class="text-2xl font-bold text-insurance-blue mb-6 text-center">blauLabs' Tech Stack vs. Industry Benchmarks</h2>
+                <div class="overflow-x-auto">
+                    <table class="tech-table w-full bg-white rounded-lg overflow-hidden card-shadow">
+                        <thead>
+                            <tr class="bg-blau-primary text-black">
+                                <th class="text-left">Capability</th>
+                                <th class="text-left">Our Accelerator</th>
+                                <th class="text-left">Industry Impact (Sources: McKinsey/Gartner)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">AI claims automation</td>
+                                <td>CV Claims FastTrack</td>
+                                <td><span class="text-success-green font-semibold">50% faster processing</span></td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="font-semibold">IoT risk mitigation</td>
+                                <td>RiskIQ Telematics</td>
+                                <td><span class="text-success-green font-semibold">40% fewer home claims</span></td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Mobile engagement</td>
+                                <td>InsureMobile Platform</td>
+                                <td><span class="text-success-green font-semibold">25% higher retention</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- What's Included -->
+            <div class="p-8 bg-gray-50">
+                <h2 class="text-2xl font-bold text-insurance-blue mb-6">What's Included?</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-blau-primary text-white rounded-full flex items-center justify-center mr-3">
+                                <span class="text-sm">🤖</span>
+                            </div>
+                            <h3 class="font-bold text-insurance-blue">Pre-trained AI models</h3>
+                        </div>
+                        <p class="text-gray-600">Damage assessment, fraud detection</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-accent-teal text-white rounded-full flex items-center justify-center mr-3">
+                                <span class="text-sm">🔗</span>
+                            </div>
+                            <h3 class="font-bold text-insurance-blue">IoT integrations</h3>
+                        </div>
+                        <p class="text-gray-600">Support for 100+ devices (e.g., Nest, Honeywell)</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-accent-purple text-white rounded-full flex items-center justify-center mr-3">
+                                <span class="text-sm">⚙️</span>
+                            </div>
+                            <h3 class="font-bold text-insurance-blue">API ecosystem</h3>
+                        </div>
+                        <p class="text-gray-600">Plug into Guidewire, Duck Creek, or legacy systems</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center mr-3">
+                                <span class="text-sm">📊</span>
+                            </div>
+                            <h3 class="font-bold text-insurance-blue">Analytics</h3>
+                        </div>
+                        <p class="text-gray-600">Real-time dashboards, predictive insights, and business intelligence tools</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center mr-3">
+                                <span class="text-sm">🔄</span>
+                            </div>
+                            <h3 class="font-bold text-insurance-blue">Automation and Self Services</h3>
+                        </div>
+                        <p class="text-gray-600">Workflow automation, customer self-service portals, and claims processing</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center mr-3">
+                                <span class="text-sm">📈</span>
+                            </div>
+                            <h3 class="font-bold text-insurance-blue">Performance Monitoring tools</h3>
+                        </div>
+                        <p class="text-gray-600">System health monitoring, SLA tracking, and operational metrics</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Market Imperatives -->
+            <div class="p-8">
+                <h2 class="text-2xl font-bold text-insurance-blue mb-6">Why Now? Market Imperatives</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gradient-to-br from-blau-primary to-blau-secondary text-white p-6 rounded-lg">
+                        <div class="text-4xl font-bold mb-2">72%</div>
+                        <p class="text-sm">of insurers prioritize AI/ML to combat rising claims costs (Gartner, 2024)</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-accent-teal to-green-600 text-white p-6 rounded-lg">
+                        <div class="text-4xl font-bold mb-2">3x</div>
+                        <p class="text-sm">IoT adoption in home insurance will grow 3x by 2027 (McKinsey, 2023)</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-accent-purple to-purple-700 text-white p-6 rounded-lg">
+                        <div class="text-4xl font-bold mb-2">60%</div>
+                        <p class="text-sm">of customers prefer insurers with mobile self-service (J.D. Power, 2023)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Next Steps -->
+            <div class="p-8 bg-blau-primary text-white">
+                <h2 class="text-2xl font-bold mb-8 text-center">Let's Transform Your Insurance Operations Together</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Step 1 -->
+                    <div class="bg-white/10 p-6 rounded-xl text-center flex flex-col">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Book a Presentation and Demo</h3>
+                        <div class="text-left space-y-3 text-sm opacity-95 flex-grow">
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span><strong>45-minute executive briefing</strong> on blauLabs for insurance</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span><strong>Live demo</strong> of AI claims automation and IoT risk prevention</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span><strong>ROI calculator</strong> customized for your claims volume</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span><strong>Industry benchmarks</strong> and analyst reports</span>
+                            </div>
+                        </div>
+                        <div class="mt-auto pt-6 border-t border-white/20">
+                            <div class="text-sm font-semibold opacity-90">Timeline: Same week</div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-white/10 p-6 rounded-xl text-center flex flex-col">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Design Your Solution / PoC</h3>
+                        <div class="text-left space-y-3 text-sm opacity-95 flex-grow">
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span><strong>Technical assessment</strong> of your existing systems</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span><strong>Custom solution design</strong> for your priority use cases</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span><strong>3-month Proof of Concept</strong> with measurable KPIs</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span><strong>Integration roadmap</strong> with Guidewire/Duck Creek</span>
+                            </div>
+                        </div>
+                        <div class="mt-auto pt-6 border-t border-white/20">
+                            <div class="text-sm font-semibold opacity-90">Timeline: 4-6 weeks</div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-white/10 p-6 rounded-xl text-center flex flex-col">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Transform Your Business</h3>
+                        <div class="text-left space-y-3 text-sm opacity-95 flex-grow">
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span><strong>Phased rollout</strong> across business units and regions</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span><strong>Training and change management</strong> for your teams</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span><strong>24/7 managed services</strong> and continuous optimization</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span><strong>Success metrics tracking</strong> and quarterly business reviews</span>
+                            </div>
+                        </div>
+                        <div class="mt-auto pt-6 border-t border-white/20">
+                            <div class="text-sm font-semibold opacity-90">Timeline: 6-12 months</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="mt-12 text-center">
+                    <p class="text-lg opacity-95 mb-6">Contact us today to begin your journey toward AI-powered insurance innovation.</p>
+                    <div class="bg-white/10 p-6 rounded-xl inline-block border-2 border-white/20">
+                        <div class="text-lg font-bold mb-2">
+                            <span class="text-white">Damon Dion Thompson</span>
+                            <span class="text-white/80 mx-2">|</span>
+                            <span class="text-white/90">Business Development Manager</span>
+                            <span class="text-white/80 mx-2">|</span>
+                            <span class="text-white/90">damon.thompson@softtek.com</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-sm opacity-80">
+                        <p>Founded in 1982 by a small group of entrepreneurs, Softtek started out in Mexico providing local IT services, and today is a global leader in next-generation digital solutions. The first company to introduce the Nearshore model, Softtek helps Global 2000 organizations build their digital capabilities constantly and seamlessly, from ideation and development to execution and evolution. Its entrepreneurial drive spans 20+ countries and more than 15,000 talented professionals.</p>
+                    </div>
+                    <div class="mt-4 flex justify-center items-center space-x-4">
+                        <div class="flex space-x-2">
+                            <div class="w-6 h-6 bg-teal-500 rounded-full flex items-center justify-center">
+                                <span class="text-white text-xs font-bold">f</span>
+                            </div>
+                            <div class="w-6 h-6 bg-sky-500 rounded-full flex items-center justify-center">
+                                <span class="text-white text-xs font-bold">t</span>
+                            </div>
+                            <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
+                                <span class="text-white text-xs font-bold">in</span>
+                            </div>
+                        </div>
+                        <span class="text-lg font-bold text-white ml-4">softtek.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AT&T Case Study -->
+            <div class="p-8 bg-gray-50">
+                <h2 class="text-2xl font-bold text-insurance-blue mb-6">Insurance Impact: AT&T Case Study</h2>
+                <div class="bg-white p-6 rounded-lg card-shadow">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-lg font-bold text-insurance-blue mb-4">Client: Major U.S. Telecom Provider (AT&T)</h3>
+                            <p class="text-gray-700 mb-4"><strong>Solution:</strong> blauLabs for Asset Intelligence & Compliance</p>
+                            
+                            <h4 class="font-bold text-insurance-blue mb-3">Results:</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center">
+                                    <span class="text-2xl mr-3">📉</span>
+                                    <span class="text-gray-700">50%+ reduction in insurance and bond costs</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-2xl mr-3">🧠</span>
+                                    <span class="text-gray-700">80% reduction in OpEx labor through asset visibility and automation</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-2xl mr-3">🏗️</span>
+                                    <span class="text-gray-700">30% efficiency gain in space planning and remote assistance</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-insurance-blue mb-3">How It Works:</h4>
+                            <p class="text-gray-700 mb-4">By using blauLabs to standardize and monitor infrastructure assets, AT&T was able to:</p>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-success-green rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                    Maintain real-time compliance with legal and operational regulations
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-success-green rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                    Ensure continuity of operations and reduce risk exposure
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-2 h-2 bg-success-green rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                    Provide insurers with verifiable asset intelligence, lowering perceived risk and bond requirements
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                        <p class="text-sm text-gray-700 font-medium">
+                            This case proves how blauLabs can directly influence insurance premiums and bond costs by improving asset transparency and operational control—a powerful precedent for insurers and large-scale asset operators.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="bg-insurance-blue text-white p-6">
+                <div class="text-center">
+                    <h3 class="text-xl font-bold mb-2">Ready to Transform Your Insurance Operations?</h3>
+                    <p class="text-sm opacity-90 mb-4">Contact us today to begin your journey toward AI-powered insurance innovation.</p>
+                    <div class="text-sm">
+                        <p class="mb-1"><strong>softtek.com</strong></p>
+                        <p class="opacity-75">All Rights Reserved © Valores Corporativos Softtek S.A. de C.V. 2024. Softtek, the Softtek logo, blauLabs and other Softtek products and services mentioned herein are registered trademarks of Valores Corporativos Softtek S.A. de C.V. in USA, Mexico and several other countries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Dark mode support
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+
+
+
+        // Add smooth animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const document_element = document.getElementById('document');
+            document_element.style.opacity = '0';
+            document_element.style.transform = 'translateY(20px)';
+            document_element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            
+            setTimeout(() => {
+                document_element.style.opacity = '1';
+                document_element.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
